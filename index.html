@@ -18,7 +18,7 @@
                             900: '#0f172a',
                             950: '#020617',
                         },
-                        brandYellow: '#facc15', // Vibrant Golden Yellow from poster
+                        brandYellow: '#facc15',
                     }
                 }
             }
@@ -33,19 +33,16 @@
             width: 100%;
         }
         
-        /* Hero Section Gradient - Using Navy for depth */
         .hero-gradient-overlay {
             background: linear-gradient(to bottom, rgba(2, 6, 23, 0.85) 0%, rgba(2, 6, 23, 0.6) 100%);
         }
 
-        /* Branding Text Gradients */
         .yellow-gradient-text {
             background: linear-gradient(90deg, #facc15 0%, #eab308 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Slide Animation */
         .slider-container {
             position: absolute;
             top: 0;
@@ -78,7 +75,6 @@
             to { transform: scale(1.15); }
         }
 
-        /* Reveal Animations */
         .section-reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -90,7 +86,6 @@
             transform: translateY(0);
         }
 
-        /* Mobile Menu Transition */
         #mobile-menu {
             transition: all 0.3s ease-in-out;
             max-height: 0;
@@ -373,11 +368,19 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-wrap justify-center gap-10 text-slate-400 font-bold text-xs uppercase tracking-[0.2em]">
-                    <a href="#about" class="hover:text-brandYellow">The Firm</a>
-                    <a href="#services" class="hover:text-brandYellow">Services</a>
-                    <a href="#contact" class="hover:text-brandYellow">Offices</a>
-                    <a href="bluemotionengineering2@gmail.com" class="hover:text-brandYellow">Email Us</a>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-10 text-slate-400 font-bold text-xs uppercase tracking-[0.2em]">
+                    <a href="#about" class="hover:text-brandYellow transition-colors">The Firm</a>
+                    <a href="#services" class="hover:text-brandYellow transition-colors">Services</a>
+                    <a href="#contact" class="hover:text-brandYellow transition-colors">Offices</a>
+                    <a href="mailto:bluemotionengineering2@gmail.com" class="hover:text-brandYellow transition-colors">Email Us</a>
+                    
+                    <!-- TikTok Button -->
+                    <a href="https://www.tiktok.com/@bluemotion.engine" target="_blank" class="flex items-center gap-2 group hover:text-white transition-colors">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512">
+                            <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/>
+                        </svg>
+                        <span>TikTok</span>
+                    </a>
                 </div>
 
                 <div class="w-full pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -396,7 +399,6 @@
     </footer>
 
     <script>
-        // Custom message logic
         function showMessage(msg) {
             const box = document.getElementById('msgBox');
             box.innerText = msg;
@@ -406,7 +408,6 @@
             }, 4000);
         }
 
-        // WhatsApp Logic
         function sendWhatsApp() {
             const name = document.getElementById('name').value;
             const type = document.getElementById('type').value;
@@ -421,14 +422,12 @@
             window.open(`https://wa.me/254707248037?text=${encodeURIComponent(message)}`, '_blank');
         }
 
-        // Form Submission
         document.getElementById('quote-form').onsubmit = (e) => {
             e.preventDefault();
             showMessage("✅ Message Sent! Our engineers will contact you soon.");
             e.target.reset();
         };
 
-        // Mobile Menu Logic
         const toggleBtn = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -440,7 +439,6 @@
             link.addEventListener('click', () => mobileMenu.classList.remove('active'));
         });
 
-        // Hero Slider
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         function nextSlide() {
@@ -450,7 +448,6 @@
         }
         setInterval(nextSlide, 6000);
 
-        // Scroll Observer
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
