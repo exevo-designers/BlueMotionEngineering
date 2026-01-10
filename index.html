@@ -312,19 +312,29 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 md:py-32 bg-slate-50 section-reveal">
+<section id="portfolio" class="py-20 md:py-32 bg-slate-50 section-reveal">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="text-navy-900 font-bold uppercase tracking-[0.3em] text-[10px] bg-brandYellow/20 px-4 py-1 rounded-full">Recent Projects</span>
                 <h2 class="text-3xl md:text-5xl font-black text-navy-950 mt-4">Engineering Excellence in Action</h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                
                 <div class="portfolio-card bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group transition-all">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070" alt="Electrical Installation" class="w-full h-full object-cover transition-transform duration-700">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070" alt="Building Construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-navy-950 text-brandYellow text-[10px] font-bold px-3 py-1 rounded uppercase tracking-widest">Building & Construction</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-navy-950 mb-3">Modern Commercial Complex</h3>
+                        <p class="text-slate-600 text-sm">Comprehensive structural development and turnkey interior fit-out for a premium retail and office hub.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group transition-all">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070" alt="Electrical Installation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-navy-950 text-brandYellow text-[10px] font-bold px-3 py-1 rounded uppercase tracking-widest">Electrical</div>
                     </div>
                     <div class="p-8">
@@ -333,10 +343,9 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="portfolio-card bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group transition-all">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=2070" alt="HVAC Systems" class="w-full h-full object-cover transition-transform duration-700">
+                        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=2070" alt="HVAC Systems" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-navy-950 text-brandYellow text-[10px] font-bold px-3 py-1 rounded uppercase tracking-widest">Mechanical</div>
                     </div>
                     <div class="p-8">
@@ -345,10 +354,9 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="portfolio-card bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group transition-all">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1599708145804-06ac9069d724?q=80&w=2070" alt="Fire Safety" class="w-full h-full object-cover transition-transform duration-700">
+                        <img src="https://images.unsplash.com/photo-1599708145804-06ac9069d724?q=80&w=2070" alt="Fire Safety" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-navy-950 text-brandYellow text-[10px] font-bold px-3 py-1 rounded uppercase tracking-widest">Fire Safety</div>
                     </div>
                     <div class="p-8">
@@ -356,12 +364,12 @@
                         <p class="text-slate-600 text-sm">Automated sprinkler and smoke detection system deployment for a high-occupancy residential plaza.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section (Google Client Reviews) -->
-    <section id="reviews" class="py-20 md:py-32 bg-navy-950 text-white section-reveal">
+   <section id="reviews" class="py-20 md:py-32 bg-navy-950 text-white section-reveal">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-center gap-4 mb-16">
                 <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
@@ -379,46 +387,63 @@
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-navy-900/50 p-8 rounded-2xl border border-white/5">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center font-bold text-lg">E</div>
-                        <div>
-                            <p class="font-bold">Evans Koech</p>
-                            <p class="text-[10px] text-slate-500 uppercase">2 months ago</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-navy-900/50 p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center font-bold text-base">P</div>
+                            <div>
+                                <p class="font-bold text-sm">Peter Omondi</p>
+                                <p class="text-[9px] text-slate-500 uppercase">1 month ago</p>
+                            </div>
                         </div>
+                        <p class="text-slate-300 italic text-xs leading-relaxed">"From site preparation to the final structural handover, Blue Motion's construction team was exceptional. Their attention to NCA standards is reassuring."</p>
                     </div>
-                    <p class="text-slate-300 italic text-sm leading-relaxed">"The electrical installation at our new warehouse was flawless. Blue Motion Engineering is professional and fast. Highly recommended for industrial projects in Narok."</p>
                 </div>
 
-                <!-- Review 2 -->
-                <div class="bg-navy-900/50 p-8 rounded-2xl border border-white/5">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-lg">S</div>
-                        <div>
-                            <p class="font-bold">Sarah Njeri</p>
-                            <p class="text-[10px] text-slate-500 uppercase">4 months ago</p>
+                <div class="bg-navy-900/50 p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center font-bold text-base">E</div>
+                            <div>
+                                <p class="font-bold text-sm">Evans Koech</p>
+                                <p class="text-[9px] text-slate-500 uppercase">2 months ago</p>
+                            </div>
                         </div>
+                        <p class="text-slate-300 italic text-xs leading-relaxed">"The electrical installation at our new warehouse was flawless. Fast and professional. Highly recommended for industrial projects."</p>
                     </div>
-                    <p class="text-slate-300 italic text-sm leading-relaxed">"Excellent service regarding fire safety compliance. They handled everything from audits to system installation. Very reliable team."</p>
                 </div>
 
-                <!-- Review 3 -->
-                <div class="bg-navy-900/50 p-8 rounded-2xl border border-white/5">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-brandYellow text-navy-950 rounded-full flex items-center justify-center font-bold text-lg">M</div>
-                        <div>
-                            <p class="font-bold">Maina Properties</p>
-                            <p class="text-[10px] text-slate-500 uppercase">6 months ago</p>
+                <div class="bg-navy-900/50 p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center font-bold text-base">S</div>
+                            <div>
+                                <p class="font-bold text-sm">Sarah Njeri</p>
+                                <p class="text-[9px] text-slate-500 uppercase">4 months ago</p>
+                            </div>
                         </div>
+                        <p class="text-slate-300 italic text-xs leading-relaxed">"Excellent fire safety compliance service. They handled everything from audits to system installation. Very reliable team."</p>
                     </div>
-                    <p class="text-slate-300 italic text-sm leading-relaxed">"Blue Motion has been our maintenance partner for 3 years now. Their response time is unmatched and the technical expertise is top-notch."</p>
                 </div>
+
+                <div class="bg-navy-900/50 p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-brandYellow text-navy-950 rounded-full flex items-center justify-center font-bold text-base">M</div>
+                            <div>
+                                <p class="font-bold text-sm">Maina Properties</p>
+                                <p class="text-[9px] text-slate-500 uppercase">6 months ago</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 italic text-xs leading-relaxed">"Their response time for technical maintenance is unmatched. The expertise they bring to MEP systems is top-notch."</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
     <!-- Contact & Location -->
     <section id="contact" class="py-20 md:py-32 bg-white section-reveal">
         <div class="max-w-7xl mx-auto px-6">
@@ -613,6 +638,7 @@
     </script>
 </body>
 </html>
+
 
 
 
